@@ -237,7 +237,7 @@ jobs:
           kubectl apply -f service.yaml
 ```
 
-Unsure how to get the KUBECONFIG_B64 locally the command and copy:
+Unsure how to get the KUBECONFIG_B64 locally paste the command and copy:
 
 ```bash
 base64 ~/.kube/config
