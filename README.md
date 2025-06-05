@@ -1,7 +1,3 @@
-Certainly! Here's the documentation formatted as a `README.md` file suitable for your GitHub profile:
-
----
-
 # 🚀 CI/CD with Docker & Kubernetes: A Comprehensive Guide
 
 ## 📌 Overview
@@ -156,7 +152,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 5000
-  type: LoadBalancer
+  type: NodePort
 ```
 
 
@@ -219,6 +215,12 @@ jobs:
           kubectl apply -f service.yaml
 ```
 
+Unsure how to get the KUBECONFIG_B64 locally the command and copy:
+
+```bash
+base64 ~/.kube/config
+```
+
 
 
 **Note**: Ensure that `DOCKER_USERNAME`, `DOCKER_PASSWORD`, and `KUBECONFIG_B64` are added to your repository's secrets.
@@ -228,29 +230,3 @@ jobs:
 ## ✅ Conclusion
 
 Integrating CI/CD pipelines with Docker and Kubernetes streamlines the development and deployment process, ensuring rapid delivery and scalability. By following this guide, you can set up a robust pipeline that automates building, testing, and deploying your applications.
-
-For a more in-depth exploration, refer to the original article by Uche Blessed: [CI/CD with Docker and Kubernetes: Deploying Containerized Applications](https://medium.com/@ucheblessed/ci-cd-with-docker-and-kubernetes-deploying-containerized-applications-7556f0727517).
-
----
-
-**Setting Up Your GitHub Profile README**
-
-To showcase this documentation on your GitHub profile:
-
-1. **Create a New Repository**:
-
-   * Name the repository exactly as your GitHub username (e.g., if your username is `octocat`, the repository name should be `octocat`).
-   * This special repository will display its `README.md` on your GitHub profile page.
-
-2. **Add the `README.md`**:
-
-   * Use the content provided above as your `README.md`.
-   * Commit the file to the root of your new repository.
-
-3. **Make the Repository Public**:
-
-   * Ensure the repository is set to public so that others can view your profile README.
-
-For more detailed instructions, refer to GitHub's official documentation on managing your profile README: [Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-
----
