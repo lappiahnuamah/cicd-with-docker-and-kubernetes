@@ -96,7 +96,7 @@ docker run -p 5000:5000 flask-app
 
 
 
-Access the application at `http://localhost:5000`.
+Access the application at `http://localhost:5000` or `http://<server-ip>:5000`.
 
 ----
 ![dashboard](1.PNG)
@@ -248,6 +248,9 @@ base64 ~/.kube/config
 **Note**: Ensure that `DOCKER_USERNAME`, `DOCKER_PASSWORD`, and `KUBECONFIG_B64` are added to your repository's secrets and also make sure you are using a real 
 
 ---
+Jobs Running
+![pods](7.PNG)
+----
 
 ## ✅ Conclusion
 
