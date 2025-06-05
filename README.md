@@ -99,7 +99,7 @@ docker run -p 5000:5000 flask-app
 Access the application at `http://localhost:5000`.
 
 ----
-![dashboard](1.png)
+![dashboard](1.PNG)
 ----
 
 ### Step 3: Push the Docker Image to a Registry
@@ -159,7 +159,14 @@ spec:
   type: NodePort
 ```
 
+Make sure a cluster is created first either with minikube or kind and docker desktop is on if doing it locally:
 
+```bash
+kind create cluster --name your-cluster-name
+```
+----
+![cluster-info](6.PNG)
+----
 
 Apply the configurations:
 
