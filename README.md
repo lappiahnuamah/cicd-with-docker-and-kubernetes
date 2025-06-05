@@ -55,7 +55,7 @@ if __name__ == "__main__":
 **`requirements.txt`**:
 
 ```
-Flask==2.0.2
+Flask
 ```
 
 
@@ -97,6 +97,10 @@ docker run -p 5000:5000 flask-app
 
 
 Access the application at `http://localhost:5000`.
+
+----
+![dashboard](1.png)
+----
 
 ### Step 3: Push the Docker Image to a Registry
 
@@ -163,9 +167,20 @@ Apply the configurations:
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
+----
+![kubectl-apply](5.PNG)
+----
 
+Get the pods:
 
-
+```bash
+kubectl get po
+```
+----
+![pods](4.PNG)
+----
+![pods](3.PNG)
+----
 ### Step 5: Automate with GitHub Actions
 
 Create a **`.github/workflows/ci-cd.yml`** file:
