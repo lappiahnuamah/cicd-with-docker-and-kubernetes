@@ -159,7 +159,7 @@ spec:
   type: NodePort
 ```
 
-Make sure a cluster is created first either with minikube or kind and docker desktop is on if doing it locally:
+Make sure a cluster is created first either with minikube or kind and docker desktop is running if doing it locally but for the github actions pipeline to work use a real cluster (EKS, AKS, GKE, DigitalOcean Kubernetes, etc):
 
 ```bash
 kind create cluster --name your-cluster-name
@@ -237,7 +237,7 @@ jobs:
           kubectl apply -f service.yaml
 ```
 
-Unsure how to get the KUBECONFIG_B64 locally paste the command and copy:
+Unsure how to get the KUBECONFIG_B64 paste the command and copy:
 
 ```bash
 base64 ~/.kube/config
@@ -245,7 +245,7 @@ base64 ~/.kube/config
 
 
 
-**Note**: Ensure that `DOCKER_USERNAME`, `DOCKER_PASSWORD`, and `KUBECONFIG_B64` are added to your repository's secrets.
+**Note**: Ensure that `DOCKER_USERNAME`, `DOCKER_PASSWORD`, and `KUBECONFIG_B64` are added to your repository's secrets and also make sure you are using a real 
 
 ---
 
